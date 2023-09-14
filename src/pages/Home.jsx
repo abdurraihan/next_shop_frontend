@@ -1,6 +1,7 @@
 
 import NavBar from '../features/navbar/NavBar'
-import ProductList from '../features/productList/ProductList'
+import ProductList from '../features/product-list/components/ProductList'
+
 
 
 export default function Home() {
