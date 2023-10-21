@@ -1,6 +1,6 @@
 
 
-import ProductDetail from "./features/product/components/ProductDetail";
+import Protected from "./features/auth/components/Protected";
 import CartPage from "./pages/CartPage";
 import Checkout from "./pages/Checkout";
 import Home from "./pages/Home"
@@ -40,7 +40,8 @@ const router = createBrowserRouter([
   },
   {
     path:"/product-detail/:id",
-    element: <ProductDetailPage></ProductDetailPage>
+
+    element: <Protected> <ProductDetailPage></ProductDetailPage> </Protected> 
   }
 ])
 

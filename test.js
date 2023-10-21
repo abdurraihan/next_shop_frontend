@@ -1846,6 +1846,6 @@ const products = [
  const n = brand.map(c=>({value:c, label:c, checked:false}))
  
  
- console.log(n);
+ //console.log(n);
 
 // json-server --watch data.json --port 8080
