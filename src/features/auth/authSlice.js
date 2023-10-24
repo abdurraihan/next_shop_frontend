@@ -26,11 +26,7 @@ export const checkUserAsync = createAsyncThunk(
 export const counterSlice = createSlice({
   name: 'user',
   initialState,
-  reducers: {
-    increment: (state) => {
-      state.value += 1;
-    },
-  },
+  
   extraReducers: (builder) => {
     builder
       .addCase(createUserAsync.pending, (state) => {
